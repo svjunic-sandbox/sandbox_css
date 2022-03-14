@@ -1,0 +1,19 @@
+doctype html
+html(lang="ja")
+  head
+    - var title = 'sandbox css'
+    include /inc/head.pug
+
+  body
+    include /inc/header.pug
+
+    main
+      h1.title-lv1= title
+
+      section
+        h2.title-lv2 aspect-ratio
+
+        div.aspect-ratio1
+        div.aspect-ratio2
+
+    include /inc/footer.pug

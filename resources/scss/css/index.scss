@@ -1,0 +1,129 @@
+@import '../_mixin/_reset.scss';
+
+html {
+  font-size: 10px;
+  line-height: 10px;
+  color: #fff;
+  background: #333333;
+}
+
+main {
+  padding: 20px;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+a {
+  &:link,
+  &:active,
+  &:visited,
+  &:focus {
+    color: #fff;
+    text-decoration: underline;
+  }
+}
+
+section {
+  margin-top: 20px;
+  padding-left: 20px;
+  section {
+    padding: 20px 0;
+    margin-top: 0px;
+  }
+}
+
+ul {
+  padding-left: 2rem;
+}
+
+li {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  text-indent: -1rem;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 0.2rem;
+    height: 0.2rem;
+    margin-right: 0.6rem;
+    border-radius: 50%;
+    background: currentColor;
+    vertical-align: middle;
+  }
+}
+
+.title-lv1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: -20px -20px 0 -20px;
+  padding: 20px;
+  color: #ffcc99;
+  background-color: #000;
+}
+
+.title-lv2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.title-lv3 {
+  padding: 10px;
+  background-color: #000;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ccc;
+
+  > a {
+    &:link,
+    &:active,
+    &:visited,
+    &:focus {
+      color: #ccc;
+      text-decoration: none;
+    }
+  }
+}
+
+.specific {
+  border-top: 1px solid #111;
+  &_inner {
+    padding: 20px;
+    color: #ffcc00;
+    font-weight: bold;
+    line-height: 2.2rem;
+    background-color: #000;
+  }
+}
+
+.result {
+  overflow: hidden;
+  height: 0;
+
+  &--open {
+    height: auto;
+  }
+
+  &_inner {
+    display: block;
+    padding: 20px;
+    color: #000;
+    line-height: 2.2rem;
+    font-weight: bold;
+    background-color: #ffcc00;
+  }
+}
+
+.aspect-ratio {
+  &1 {
+    aspect-ratio: 16/9;
+    background-color: #ccc;
+  }
+  &2 {
+    aspect-ratio: 3/4;
+    background-color: #fcc;
+  }
+}

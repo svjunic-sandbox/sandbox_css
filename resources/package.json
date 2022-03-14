@@ -1,0 +1,22 @@
+{
+  "name": "sandbox_css",
+  "version": "1.0.0",
+  "description": "css sandbox",
+  "main": "gulpfile.js",
+  "scripts": {
+    "gulp": "gulp",
+    "pug": "gulp pug",
+    "sass": "gulp sass",
+    "watch": "gulp watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sv.junic",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.9"
+  }
+}
